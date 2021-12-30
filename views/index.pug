@@ -1,0 +1,32 @@
+extends layout.pug
+block title 
+    title DanceApp :: Home
+block content 
+    section#introSection 
+        div#carouselExampleSlidesOnly.carousel.slide(data-bs-ride='carousel')
+            div.carousel-inner
+                div.carousel-item.active
+                    img.d-block.w-100(src="../static/img/banner2.jpg")
+                div.carousel-item
+                    img.d-block.w-100(src="../static/img/banner1.jpg")
+    section#missionSection 
+        div.card.col-md-3.m-2.p-2
+            img.card-img-top(src="../static/img/dancing-icon1.png")
+            h5.card-title Card Title 
+            p.card-text Some quick example text to build on the card
+        div.card.col-md-3.m-2.p-2
+            img.card-img-top(src="../static/img/dancing-icon2.png")
+            h5.card-title Card Title 
+            p.card-text Some quick example text to build on the card
+        div.card.col-md-3.m-2.p-2
+            img.card-img-top(src="../static/img/dancing-icon3.png")
+            h5.card-title Card Title 
+            p.card-text Some quick example text to build on the card
+    section#sponsorSection 
+        h2 Our Sponsors
+        div.sponsorImgContainer
+            img.card-img-top(src="../static/img/sponsor.png")
+            img.card-img-top(src="../static/img/sponsor.png")
+            img.card-img-top(src="../static/img/sponsor.png")
+            img.card-img-top(src="../static/img/sponsor.png")
+        

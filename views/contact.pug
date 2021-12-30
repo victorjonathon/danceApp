@@ -1,0 +1,14 @@
+extends layout.pug
+block title 
+    title DanceApp :: Contact Us
+block content 
+    div.container
+        h1.text-center Contact Us
+        div.form-cover.text-center
+            form(action="/contactUs", method="post")
+                input(type="text", name="name", placeholder="Enter your name") 
+                input(type="email", name="email", placeholder="Enter your email") 
+                input(type="text", name="phone", placeholder="Enter your phoone") 
+                button(type="submit", class="btn btn-primary") SUBMIT
+                    
+        
